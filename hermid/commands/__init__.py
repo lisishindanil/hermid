@@ -1,3 +1,3 @@
-from . import start
+from . import start, currency
 
-dps = [start.dp]
+dps = [start.dp, currency.dp]

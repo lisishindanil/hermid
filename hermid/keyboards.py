@@ -15,5 +15,12 @@ menu = (
 
 back_to_menu = (
     InlineKeyboard().add(InlineButton("↩️ Назад", callback_data="menu"))
-)
+).get_markup()
 
+currency = (
+    InlineKeyboard()
+    .add(InlineButton("Світові валюти", callback_data="currency_rates"))
+    .add(InlineButton("Крипто валюти", callback_data="crypto_currency_rates"))
+    .row()
+    .add(InlineButton("↩️ Назад", callback_data="menu"))
+).get_markup()
