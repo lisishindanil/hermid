@@ -1,3 +1,3 @@
-from hermid import commands
+from hermid import commands, middlewares
 
-dps = [*commands.dps]
+dps = [*middlewares.dps, *commands.dps]
